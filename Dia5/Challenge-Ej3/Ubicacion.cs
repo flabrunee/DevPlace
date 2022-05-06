@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace PP
+namespace Challenge_Ej3
 {
     internal class Ubicacion
     {
-        private int x;
-        private int y;
+        private double x;
+        private double y;
         public double X
         {
             get { return x; }
@@ -14,7 +14,7 @@ namespace PP
         {
             get { return y; }
         }
-        public Ubicacion(int x, int y) { this.x = x;this.y = y; }
+        public Ubicacion(double x, double y) { this.x = x; this.y = y; }
         public override string ToString()
         {
             return "Eje X: " + this.X + " Eje Y: " + this.Y;
