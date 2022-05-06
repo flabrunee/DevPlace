@@ -8,8 +8,8 @@ namespace PP
 {
     internal interface IOperaciones
     {
-        protected double num1 { get; set; }
-        protected double num2 { get; set; }
+        double num1; { get; set; }
+        double num2; { get; set; }
         public double Operar();
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace PP
 {
-    public class Suma:IOperaciones
+    internal class Suma:IOperaciones
     {
-        public double num1 { get; set; }
-        public double num2 { get; set; }
+     /*   public double num1 { get; set; }
+        public double num2 { get; set; }*/
         public double Operar()
         {
             return (num1 + num2);
