@@ -30,8 +30,6 @@ namespace Challenge
         //static bool IsLetter(char c) => c is >= 'a' and <= 'z' or >= 'A' and <= 'Z';
         static bool CodDeptoOk(int c) => c is >= '1' and <= '9';
         static bool CodTipoArtOk(int c) => c is >= 1 and <= 20;
-        //ss static bool CodPrecioArtOk(int c) => c is >= 1 and <= 9999;
-        //
         static bool VerificarCodigo(string codstr)
         {
             bool resultado = true;
@@ -89,7 +87,6 @@ namespace Challenge
                                 Console.Write("Ingrese un numero: ");
                                 try
                                 {
-                                    //num = Convert.ToInt32(Console.ReadLine());
                                     num = Console.Read();
                                 }
                                 catch (Exception e)
@@ -205,8 +202,7 @@ namespace Challenge
                                     indice = Buscar_indice_art(codstr, vectorArticulos);   //Lo q esta almacenado en vectorCodigos[indice] es el mismo codigo
                                                                                            //que utilice para buscarlo. O sea, vectorCodigos[indice] = codstr
                                                                                            //Obtener el precio unitario del articulo
-                                    double precio = ObtPrecioArt(Convert.ToString(vectorArticulos[indice]));  // codstr);
-                                    //double dpto = ObtDepto(Convert.ToString(vectorArticulos[indice]));        // codstr);
+                                    double precio = ObtPrecioArt(Convert.ToString(vectorArticulos[indice]));  // codstr);                                    
                                     double dpto = ObtDepto(Convert.ToString(vectorArticulos[indice]));        // codstr);
                                     double precio_Unitario = Math.Truncate(precio * dpto / 100) * CTE_BENEFICIO;
                                     //-----Devolver resultados-----
