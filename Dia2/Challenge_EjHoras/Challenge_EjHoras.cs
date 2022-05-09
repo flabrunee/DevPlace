@@ -65,6 +65,7 @@ namespace Challenge_EjHoras
                 op = new Operario(legajo, apynom, valorhora, TotaHrsTrab, TotSueldoACobrar, fecha);
                 //Agregar operario a la lista
                 lista_oper[indice] = op;
+                indice++;
             }
         }
 
