@@ -5,8 +5,6 @@
  *STRING[3] => String.Format("{0:D3}", number); || myString = 3.ToString("D3"); || number.ToString("D3");
  */
 
-
-
 namespace Challenge_EjHoras
 {
     internal struct Operario
@@ -31,10 +29,12 @@ namespace Challenge_EjHoras
     {
         public string legajo { get; set; }
         public double horas_trab { get; set; }
-        public Hora_trabajada(string legajo, double horas_trab)
+        public DateTime fecha { get; set; }
+        public Hora_trabajada(string legajo, double horas_trab, DateTime fecha)
         {
             this.legajo = legajo;
             this.horas_trab = horas_trab;
+            this.fecha = fecha;
         }
     }
 }

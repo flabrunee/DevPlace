@@ -41,7 +41,8 @@ namespace Challenge_EjHoras
 {
     internal class Program
     {
-        const int MAXARRAY = 8;
+        const int MAXOPERARIOS = 24;
+        const int MAXHORAS = 20;
         static void LecturaPersonal(Operario[] lista_oper)
         {
             var reader = new StreamReader(File.OpenRead(@"F:\Personal.csv"));
@@ -52,12 +53,15 @@ namespace Challenge_EjHoras
             int indice = 0;
             while (!reader.EndOfStream)
             {
-                var line = reader.ReadLine();  //Pedro;24;23.654.643
-                var values = line.Split(';');  // [Pedro] [24] [23.654.643]
-                //Levantar linea del archivo
+                if (indice == -1) { //Encabezado
+                    reader.ReadLine();   //Avanzar a primer registro
+                }                               //legajo    apnom    valorhora total_hrs_trab
+                var line = reader.ReadLine();   //  12  ;Pedro Perez;  80,50  ;      24
+                var values = line.Split(';');
+                //Levantar registro del archivo
                 legajo = values[0];
                 apynom = values[1];
-                valorhora = values[2];
+                valorhora = Convert.ToDouble(values[2]);
                 TotaHrsTrab = Convert.ToDouble(values[3]);
                 TotSueldoACobrar = Convert.ToDouble(values[4]);
                 fecha = DateTime.Parse(values[5]);
@@ -69,23 +73,34 @@ namespace Challenge_EjHoras
             }
         }
 
-        static void LeerControl()
+        static void LecturaHorasTrab(Hora_trabajada[] lista_horas)
         {
             var reader = new StreamReader(File.OpenRead(@"F:\Horas.csv"));
             Hora_trabajada hrTrb;
             string legajo;
             double TotaHrsTrab;
+            int indice = 0;
             while (!reader.EndOfStream)
             {
-                hrTrb = new Hora_trabajada();
+                if (indice == -1)
+                { //Encabezado
+                    reader.ReadLine();   //Avanzar a primer registro
+                }                              //   fecha  ;legajo;horas_trabajadas
+                var line = reader.ReadLine();  //01/04/2022;  12  ;2.5
+                var valores = line.Split(';');
+                //                         fecha       legajo                        horas_trab
+                hrTrb = new Hora_trabajada(Convert.ToString(valores[0]), Convert.ToDouble(valores[1]), Convert.ToDateTime(valores[2]));
+                  //Agregar a la lista
+                lista_horas[indice] = hrTrb;
             }
-
+        }
         static void Main(string[] args)
         {
-            //List<Operario> lista_oper = new List<Operario>();
-            Operario[MAXARRAY] ArrayPersonas = new Operario();
+            //ss List<Operario> lista_oper = new List<Operario>();
+            Operario[] ArrayPersonas = new Operario[MAXOPERARIOS];
+            Hora_trabajada[] ArrayHoras = new Hora_trabajada[MAXHORAS];
 
-            lista_oper.Equals()
+            //lista_oper.Equals()
             //foreach (string line in Console.ReadLine().Split(new char[] { }))
 
 
