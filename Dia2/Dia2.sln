@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PP", "PP\PP.csproj", "{8D845C6C-1EB7-4159-842C-F39015755DE5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge", "Challenge\Challenge.csproj", "{32782DD1-0C8A-4A56-BE73-3367A5A16C35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_EjHoras", "Challenge_EjHoras\Challenge_EjHoras.csproj", "{32782DD1-0C8A-4A56-BE73-3367A5A16C35}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioFranco", "EjercicioFranco\EjercicioFranco.csproj", "{C6997F6D-1825-48DA-8F58-0C9A6EA224F2}"
 EndProject

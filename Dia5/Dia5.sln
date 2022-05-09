@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge-Ej4", "Challenge-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge-Ej5", "Challenge-Ej5\Challenge-Ej5.csproj", "{DF28CEDF-F394-4716-B4F1-0A4953DB89D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge-Ej2", "Challenge-Ej2\Challenge-Ej2.csproj", "{37413D37-C5D2-48F7-92EC-CA2AC6862D99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge-Ej2", "Challenge-Ej2\Challenge-Ej2.csproj", "{37413D37-C5D2-48F7-92EC-CA2AC6862D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda contactos (prof)", "Agenda contactos (prof)\Agenda contactos (prof).csproj", "{02E87EB6-55C8-4134-B342-2EC7BDA92FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{37413D37-C5D2-48F7-92EC-CA2AC6862D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37413D37-C5D2-48F7-92EC-CA2AC6862D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37413D37-C5D2-48F7-92EC-CA2AC6862D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E87EB6-55C8-4134-B342-2EC7BDA92FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E87EB6-55C8-4134-B342-2EC7BDA92FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E87EB6-55C8-4134-B342-2EC7BDA92FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E87EB6-55C8-4134-B342-2EC7BDA92FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
