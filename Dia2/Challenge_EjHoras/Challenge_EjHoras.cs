@@ -50,11 +50,12 @@ namespace Challenge_EjHoras
             string legajo, apynom;
             double valorhora, TotaHrsTrab, TotSueldoACobrar;
             DateTime fecha;
-            int indice = 0;
+            int indice = -1;
             while (!reader.EndOfStream)
             {
                 if (indice == -1) { //Encabezado
                     reader.ReadLine();   //Avanzar a primer registro
+                    indice++;
                 }                               //legajo    apnom    valorhora total_hrs_trab
                 var line = reader.ReadLine();   //  12  ;Pedro Perez;  80,50  ;      24
                 var values = line.Split(';');
@@ -79,12 +80,13 @@ namespace Challenge_EjHoras
             Hora_trabajada hrTrb;
             string legajo;
             double TotaHrsTrab;
-            int indice = 0;
+            int indice = -1;
             while (!reader.EndOfStream)
             {
                 if (indice == -1)
                 { //Encabezado
                     reader.ReadLine();   //Avanzar a primer registro
+                    indice++;
                 }                              //   fecha  ;legajo;horas_trabajadas
                 var line = reader.ReadLine();  //01/04/2022;  12  ;2.5
                 var valores = line.Split(';');
@@ -92,6 +94,7 @@ namespace Challenge_EjHoras
                 hrTrb = new Hora_trabajada(Convert.ToString(valores[0]), Convert.ToDouble(valores[1]), Convert.ToDateTime(valores[2]));
                   //Agregar a la lista
                 lista_horas[indice] = hrTrb;
+                indice++;
             }
         }
         static void Main(string[] args)
