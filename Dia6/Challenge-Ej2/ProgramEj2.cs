@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-
+//USO DE PARTIAL CLASS
 
 /*Crear la clase Vehículo, definir las propiedades estadoMotor, velocidad y los métodos 
  * Arrancar() , Frenar(), Acelerar() y Apagar(). Dividir la clase en distintos archivos 

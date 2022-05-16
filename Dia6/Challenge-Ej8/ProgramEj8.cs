@@ -1,5 +1,5 @@
 ﻿using System;
-/*EXTENSION*/
+//USO DE EXTENSION, SUBSTRING
 
 
 /*Agregar dos métodos a la clase string que permitan recuperar la primera mitad y la segunda mitad de la cadena.*/

@@ -1,4 +1,6 @@
 ﻿using System;
+//USO DE PARTIAL CLASS
+
 /*-Crear la clase Rectángulo, definir dos propiedades: Lado1 y Lado2. Definir dos métodos RetornarSuperficie 
  * y RetornarPerimetro. Dividir la clase en dos archivos utilizando el concepto de "partial class".*/
 
