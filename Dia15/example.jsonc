@@ -1,0 +1,30 @@
+//clave, valor
+
+{
+    "nicolas_liloia":
+        {
+            "nombre": "nico",
+            "mail": "liloiascott@gmail.com",
+            "curso": {
+                "nombre": "c#",
+                "modalidad": "bootcamp",
+                "alumnos": 20
+            },
+        
+            "cursos": [
+                {
+                    "1": {
+                        "nombre": "ejemplo"
+                    },
+                    "2": {
+                        "nombre": "ejemplo2"
+                    }
+                }
+            ]
+        
+    },
+
+    "duglas_costa": {
+        
+    }
+}

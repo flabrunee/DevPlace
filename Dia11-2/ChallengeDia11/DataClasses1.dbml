@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ChallengeDia9-Ej3-Concesionaria" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\devplace;Initial Catalog=ChallengeDia9-Ej3-Concesionaria;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="ChallengeDia11.Properties.Settings" SettingsPropertyName="ChallengeDia9_Ej3_ConcesionariaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Vehiculo" Member="Vehiculo">
+    <Type Name="Vehiculo">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Modelo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Importe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaBaja" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Año" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kilometraje" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

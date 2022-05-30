@@ -1,0 +1,43 @@
+Use [ChallengeDia9-Ej5-LocalInf]
+Go
+
+CREATE TABLE Categoria
+(
+	[Id] INT PRIMARY KEY IDENTITY NOT NULL,
+	[Nombre] VARCHAR(50)
+)
+
+CREATE  TABLE Proveedor
+(
+	[Id] INT PRIMARY KEY IDENTITY NOT NULL,
+	[Nombre] VARCHAR(50)
+)
+
+CREATE TABLE Producto
+(
+	[Id] INT IDENTITY NOT NULL PRIMARY KEY,
+	[Nombre] VARCHAR(50),
+	[Precio] DECIMAL(18,2),
+	[CategoriaId] INT FOREIGN KEY REFERENCES Categoria(Id),
+	[ProveedorId] INT FOREIGN KEY REFERENCES Proveedor(ID)
+)
+
+CREATE  TABLE Cliente
+(
+	[Id] INT PRIMARY KEY IDENTITY NOT NULL,
+	[Nombre] VARCHAR(50)
+)
+
+CREATE  TABLE Venta
+(
+	[Id] INT PRIMARY KEY IDENTITY NOT NULL,
+	[ClienteId] INT FOREIGN KEY REFERENCES Cliente(Id),
+	[Nombre] VARCHAR(50)
+)
+
+CREATE  TABLE VentaXProd
+(
+	[VentaId] INT FOREIGN KEY REFERENCES Venta(Id),
+	[ProdId] INT FOREIGN KEY REFERENCES Producto(Id),
+)
+
